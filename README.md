@@ -19,6 +19,7 @@ processo
 * VSCODE 
 * CSS3
 * html5
+* JS
 
 # Desenvolvedoras do Projeto
 
