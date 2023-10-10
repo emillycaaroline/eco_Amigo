@@ -1,4 +1,4 @@
-# ecoAmigo
+# eco_Amigo
 # Indice
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Funcionalidades do projeto](#-funcionalidades-do-projeto)
@@ -10,7 +10,7 @@
 EcoAmigo é um projeto do goIT que foi escolhido apartir de uma ODS, a qual “Vida Terrestre”, que temos como o objetivo informar sobre a cultura indígena e a amazônia atualmente.
 
 ## 🔨 Funcionalidades do projeto
-processo
+No site terá um menu com funções como o Inicio que sera a página inicial contendo informações do site. Informações nele terá as curiosidades e informações baseado no tema principal, Empresas Eco terá uma pagina que você poderá adicionar sua empresa, adicionando esse cadastro vai ser redirecionado para a tela Empresas Eco.
 
 ## Acesso ao projeto
 processo 
