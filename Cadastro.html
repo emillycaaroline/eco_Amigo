@@ -1,83 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head><script src="../assets/js/color-modes.js"></script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
-    <title>Denúncia</title>
-    <link rel="stylesheet" href="cadastro.css">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h4 class="featurette-heading fw-normal lh-1">Realize seu Cadastro</h4> 
-        <p class="lead">Ao lado tem um formulario de cadastroda EcoAmigo <br> para denúncia de crimes ambientais </p>
-        <p class="lead">Quem pode denunciar crime ambiental? <br>
-          Qualquer cidadão pode registrar uma denúncia relacionada a <br>  crimes e demais infrações contra o meio ambiente, tendo <br>  seu anonimato garantido pelo Estado.</p>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title> Cadastre sua Empresa</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Formulário -->
+    <form action="" id="formulario" method="POST" name="formulario">
+      <legend>
+        Cadastre sua Empresa
+      </legend>
+      <div class="input-group">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Insira seu nome"
+        />
       </div>
-     
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputZip" class="form-label">Nome da Empresa</label>
-        <input type="text" class="form-control " id="empresa">
-      </div><br>
-        <div class="col-md-4">
-            <label for="inputZip" class="form-label">CEP</label>
-            <input type="text" class="form-control " id="cep">
-          </div>
-        <div class="col-8">
-          <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="rua" placeholder="Rua ...">
+      <div class="input-group">
+        <label for="empresa">Sua Empresa:</label>
+        <input
+          type="text"
+          id="sobrenome"
+          placeholder="Insira sua empresa"
+        />
+      </div>
+      <div class="input-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Insira seu e-mail" />
+      </div>
+      <div class="input-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Insira a senha" />
+      </div>
+      <div class="colunas">
+        <div class="input-group">
+          <label for="telefone">Telefone:</label>
+          <input
+            type="text" id="telefone"
+            placeholder="Insira seu Telefone"
+          />
         </div>
-        <div class="col-3">
-          <label for="inputAddress" class="form-label">Numero</label>
-          <input type="text" class="form-control" id="numero" placeholder="1234">
+        <div class="input-group">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" placeholder="Insira seu CEP" />
         </div>
-        <div class="col-10">
-          <label for="inputAddress2" class="form-label">Bairro</label>
-          <input type="text" class="form-control" id="bairro" >
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="Cidade">
-        </div>
-        <div class="col-md-5">
-          <label for="inputState" class="form-label">Estado</label>
-          <input type="text" class="form-control" id="Estado">
-        </div>
-        
-        <div class="col-md-10">
-          <label for="inputState" class="form-label">Email</label>
-          <input type="email" class="form-control" id="Email">
-        </div>
-        <form method="post" action="mailto:email@example.com" >
+      </div>
+      <div class="footer">
+        <button type="button" class="botao" onclick="validar()">
+          Enviar
+        </button>
+      </div>
+    </form>
 
-          <div class="col-md-6">
-          <label for="Nome">Nome:</label>
-          <input type="text" id="nome" name="Name" size="15" maxlength="15" /><br />
-          </div>
-        
-          <div class="col-md-6">
-          <label for="Sobrenome">Sobrenome:</label>
-          <input type="text" name="Last_name" size="25" maxlength="25" /><br />
-        </div>
+    <script>
+      /* Função Validar */
+      function validar() {
+        // pegando o valor do nome pelos names
+        var nome = document.getElementById("nome");
+        var sobrenome = document.getElementById("empresa");
+        var email = document.getElementById("email");
+        var senha = document.getElementById("senha");
+        var telefone = document.getElementById("telefone");
+        var cep = document.getElementById("cep");
        
-        <input type="submit" value="cadastrar" />    
-        </form>
-      <script type="text/javascript" src="./Cadastro.js"></script>  
 
-    
+        // verificar se o nome está vazio
+        if (nome.value == "") {
+          alert("Nome não informado");
 
-    <!-- /END THE FEATURETTES -->
+          // Deixa o input com o focus
+          nome.focus();
+          // retorna a função e não olha as outras linhas
+          return;
+        }
+        if (empresa.value == "") {
+          alert("Empresa não informado");
+          sobrenome.focus();
+          return;
+        }
+        if (email.value == "") {
+          alert("E-mail não informado");
+          email.focus();
+          return;
+        }
+        if (senha.value == "") {
+          alert("Senha não informada");
+          senha.focus();
+          return;
+        }
+        if (telefone.value == "") {
+          alert("Telefone não informado");
+          telefone.focus();
+          return;
+        }
+        if (cep.value == "") {
+          alert("CEP não informado");
+          cep.focus();
+          return;
+          
+        }
+        
+        alert("Formulário enviado!");
+        // envia o formulário
+        //formulario.submit();
+      }
+      
+    </script>
+  </div>
 
-  </div><!-- /.container -->
 
-
- 
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-  </html>
+</html>
 
-   
+
+</body>
+</html>
