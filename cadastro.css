@@ -1,152 +1,86 @@
-header{
-  background:  #205732;
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  width: 940px;
+html,
+:root {
+  height: 100%;
 }
-
+input {
+  box-sizing: border-box;
+  outline: none;
+}
 body {
-  color: white;
-  font-family: Verdana,Tahoma,sans-serif;
-
-  
-}
-h1, h2,p{
-  text-align: justify;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form.row.g-3{
-  font-family: Verdana,Tahoma,sans-serif;
-  font-size: 15px;
-  background-color: #F2FFF2;
+  background: linear-gradient(180deg, #205732 0%, #3e8154 100%);
+  background-size: 100%;
   margin: 0;
-  border: 5px, solid, #000000;
-  color: rgb(0, 0, 0);
-  max-width: 500px;
- 
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#formulario {
+  width: 500px;
+  min-height: 400px;
+  background:#F2FFF2;
+  border-radius: 6px;
+  padding: 20px 30px;
+}
+#formulario legend {
+  color:#205732;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 22px;
+}
+.input-group {
+  margin: 10px 0;
+}
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #205732;
+  cursor: pointer;
+}
+
+.input-group input:not([type="checkbox"]) {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+}
+.input-group input:focus {
+  border-color: #20b2aa;
+}
+
+.input-group input::placeholder {
+  color: #686868;
+  font-weight: 300;
+}
+.colunas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.colunas .input-group {
+  width: 48%;
+}
+.footer {
   text-align: center;
 }
-                         
-                                             
-input {
-  width: 200px;
-  padding: 10px;
-  color: black;
-  margin-left: 20px;
-  margin-top: 10px;
-  -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-  border: 1px solid;
-}
-                                                                              
-input:hover, input:focus{
-  border-color: #000066;
-  box-shadow: 5px 0px 9px #FFFF00;
-  background-color: #F2FFF2;
-  color: black;
+.botao {
+  background: #73a4dc;
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
   font-weight: bold;
+  cursor: pointer;
 }
-                                                                                                   
-input {
-  background-color:#F2FFF2;
-  height: 40px;
-  width: 100px;
-  font-weight: bold;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 1px solid;
-  color: black;
+.botao:hover {
+  background: #309150;
 }
-                                                    
-form label {
-  margin-left: 20px;
-  color: #000000;
-  font-weight: bold;  
-}
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -.05rem;
-}
-
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-   
