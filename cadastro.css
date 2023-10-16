@@ -1,73 +1,86 @@
-header{
-    background:  #205732;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    width: 940px;
+html,
+:root {
+  height: 100%;
 }
-
+input {
+  box-sizing: border-box;
+  outline: none;
+}
 body {
-    color: white;
-    font-family: Verdana,Tahoma,sans-serif;
-
-    
+  background: linear-gradient(180deg, #205732 0%, #3e8154 100%);
+  background-size: 100%;
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
-h1, h2,p{
-    text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-
-form {
-    font-family: Verdana,Tahoma,sans-serif;
-    font-size: 15px;
-    background-color: #205732;
-    max-width: 500px;
-    margin: 0 auto;
-    border: 2px, solid, #F2FFF2;
-    color: white;
-    max-width: 500px;
-    font-size: 15px;
-    padding: 0;
-    margin: 0 auto !important;
-
-    
+#formulario {
+  width: 500px;
+  min-height: 400px;
+  background:#F2FFF2;
+  border-radius: 6px;
+  padding: 20px 30px;
 }
-                            
-                                               
-input {
-    width: 200px;
-    padding: 10px;
-    color: black;
-    margin-left: 20px;
-    margin-top: 10px;
-    -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-    border: 1px solid;
+#formulario legend {
+  color:#205732;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 22px;
 }
-                                                                                
-input:hover, input:focus{
-    border-color: #000066;
-    box-shadow: 5px 0px 9px #FFFF00;
-    background-color: #F2FFF2;
-    color: black;
-    font-weight: bold;
+.input-group {
+  margin: 10px 0;
 }
-                                                                                                     
-input {
-    background-color:#F2FFF2;
-    height: 40px;
-    width: 100px;
-    font-weight: bold;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: 1px solid;
-    color: black;
-}
-                                                      
- form label {
-    margin-left: 20px;
-    color: #FFFFFF;
-    font-weight: bold;  
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #205732;
+  cursor: pointer;
 }
 
-   
+.input-group input:not([type="checkbox"]) {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+}
+.input-group input:focus {
+  border-color: #20b2aa;
+}
+
+.input-group input::placeholder {
+  color: #686868;
+  font-weight: 300;
+}
+.colunas {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+.colunas .input-group {
+  width: 48%;
+}
+.footer {
+  text-align: center;
+}
+.botao { 
+  background: #73a4dc;
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botao:hover {
+  background: #309150;
+}
