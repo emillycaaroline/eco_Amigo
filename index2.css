@@ -3,12 +3,13 @@
 /* Padding below the footer and lighter body text */
 
 
-
+main{
+  margin-top: 5%;
+}
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
-
 }
 div#corpo{
   margin: 5px 10px 15px 30px
