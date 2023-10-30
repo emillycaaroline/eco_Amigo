@@ -7,12 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Denuncia</title>
+    <link rel="stylesheet" href="denuncia.css">
+    <title>Denúncia</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="denuncia.css">
     
     
 
@@ -103,7 +104,6 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
-<<<<<<< HEAD
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -155,10 +155,18 @@
         </li>
       </ul>
     </div>
+    <style>
+      header {
+        background-color: rgb(6, 60, 6); 
+      }
+      .navbar {
+        background-color: rgb(6, 60, 6) !important; 
+      }
+      </style>
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <img src="img/logo.png" alt="some text" width=50 height=60>
+      <img src="img/logo app.jpg" alt="some text" width=50 height=60>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -166,11 +174,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-
             <a class="nav-link" href="index.html">Home</a>
-
-
-
           </li>
         
           <li class="nav-item dropdown">
@@ -181,6 +185,7 @@
               <li><a class="dropdown-item" href="susten.html">sustentabilidade</a></li>
               <li><a class="dropdown-item" href="amazonia.html">Amazônia</a></li>
             </ul>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="indigenas.html" data-bs-toggle="dropdown" >indigenas</a>
               <ul class="dropdown-menu">
@@ -189,46 +194,54 @@
                 <li><a class="dropdown-item" href="susten.html">Artes</a></li>
                 <li><a class="dropdown-item" href="amazonia.html">Amazônia</a></li>
               </ul>
+
           <li class="nav-item">
-            <a class="nav-link" href="empreECO.html">Empresas ECO</a>
+            <a class="nav-link active" aria-current="page" href="empreECO.html">Empresas ECO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="denuncia.html">Denuncia</a>
+            <a class="nav-link" href="denuncia.html">Denuncia</a>
           </li>
           
           <li class="nav-item">
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li>
         </ul>
-        </form>
       </div>
     </div>
   </nav>
 </header>
-      
+<div class="container mt-5">
+  <h2>Formulário de Denúncia</h2>
+  <form action="enviar_email.php" method="post">
+      <div class="mb-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="mb-3">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+          <label for="motivo" class="form-label">Motivo da Denúncia:</label>
+          <select class="form-select" id="motivo" name="motivo" required>
+              <option value="desmatamento">Desmatamento ilegal</option>
+              <option value="pesca">Pesca ilegal</option>
+              <option value="descarte">Descarte ilegal de resíduos</option>
+              <option value="agrotoxicos">Uso indevido de agrotóxicos</option>
+              <option value="outro">Outro</option>
+          </select>
+      </div>
+      <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem:</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Denúncia</button>
+  </form>
+</div>
 
 
-
-
-
-
-
-    <hr class="featurette-divider">
-
- <body>
-  <img src="img\MicrosoftTeams-image.png" width="50%" alt="">
- </body>
-
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Voltar para o topo</a></p>
-
+</main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-  </html>
+</body>
+</html>

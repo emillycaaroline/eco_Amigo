@@ -1,0 +1,59 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-top: 5rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Estilos para o formulário de denúncia */
+  #denuncia {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #denuncia h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-control:focus {
+    border-color: #2e86de;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #2e86de;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background: #1e62c9;
+  }
+  .btn-primary{
+    background-color: rgb(6, 60, 6); 
+  }
