@@ -95,6 +95,9 @@ body{
 }
 
 .membro {
-  margin: 10px;
-  text-align: center;
+  margin-right: 50px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
+}
+
+.membro:last-child {
+  margin-right: 0; /* Remova a margem do último membro para evitar espaçamento extra */
 }
