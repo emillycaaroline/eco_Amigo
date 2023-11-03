@@ -2,11 +2,11 @@
 # eco_Amigo
 ##  🌱 EcoAmigo
 
-Bem-vindo ao EcoAmigo! Este é um projeto que visa promover a conscientização ambiental e encorajar a adoção de práticas sustentáveis em nossas vidas diárias. Acreditamos que pequenas mudanças podem ter um grande impacto quando se trata de preservar o nosso planeta e as culturas indígenas. Aqui está um resumo do que oferecemos:  
-O EcoAmigo é um espaço dedicado a compartilhar informações sobre práticas sustentáveis e seu impacto positivo no meio ambiente. Queremos inspirar e capacitar nossos usuários a adotar escolhas mais ecológicas em suas vidas diárias, desde o uso eficiente de energia até o gerenciamento responsável de resíduos.
+Bem-vindo ao EcoAmigo! Este é um projeto que visa promover a conscientização ambiental e encorajar a adoção de práticas sustentáveis em nossas vidas diárias. Acreditamos que pequenas mudanças podem ter um grande impacto quando se trata de preservar o nosso planeta e as culturas indígenas.
+
 
 ## Sobre o EcoAmigo
-O EcoAmigo é um projeto que nasceu da parceria entre a Tata Consultancy Services e o projeto GOIT da Marista Escola Social Irmão Acácio. Como estudantes da escola Marista, desenvolvemos o EcoAmigo para participar e contribuir ativamente com o projeto GOIT, com o objetivo de promover a conscientização ambiental e a sustentabilidade.
+Em colaboração entre a Tata Consultancy Services e a escola Marista, onde o EcoAmigo foi concebido como uma iniciativa dentro do programa GOIT (sigla em inglês para Global Outreach Initiative for TCS), com o objetivo de promover a conscientização ambiental e a sustentabilidade.
 
 ## ⚙️ Recursos do EcoAmigo
 
