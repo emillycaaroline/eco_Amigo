@@ -95,9 +95,26 @@ body{
 }
 
 .membro {
-  margin-right: 50px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
+  margin-right: 30px; /* Ajuste a margem conforme necessário para o espaçamento desejado */
 }
 
 .membro:last-child {
   margin-right: 0; /* Remova a margem do último membro para evitar espaçamento extra */
 }
+.contact-icons {
+  text-align: center; /* Centraliza os ícones horizontalmente */
+}
+
+.icon {
+  width: 40px; /* Ajuste o tamanho conforme necessário */
+  height: 40px;
+  margin: 8px; /* Adiciona margem entre os ícones */
+  transition: transform 0.3s, filter 0.3s; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho do ícone ao passar o mouse sobre ele */
+  filter: brightness(120%); /* Ajusta o brilho para criar o efeito de mudança de cor */
+}
+
+
