@@ -116,5 +116,54 @@ body{
   transform: scale(1.1); /* Aumenta ligeiramente o tamanho do ícone ao passar o mouse sobre ele */
   filter: brightness(120%); /* Ajusta o brilho para criar o efeito de mudança de cor */
 }
+ /* Menu da pagina de empresas eco */
+ .menu-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-list li:last-child {
+  margin-right: 0;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: rgb(6, 60, 6) ;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.menu-list li a:hover {
+  background-color:  rgb(6, 60, 6) ;
+  color: #fff;
+}
+
+/*
+voltar ao topo
+*/
+.back-to-top {
+  display: inline-block;
+  background-color:  rgb(6, 60, 6);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.back-to-top:hover {
+  background-color: #45a049;
+}
 
 
