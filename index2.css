@@ -213,3 +213,15 @@ Adiciona no meu um submenu que fique suspenso
 .menu-list li:hover .submenu {
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .submenu {
+    display: none;
+  }
+  .menu-list li {
+    text-align: center;
+  }
+  .menu-list li a {
+    display: block;
+    padding: 10px;
+  }
+}
