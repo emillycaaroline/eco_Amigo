@@ -22,7 +22,7 @@
 
     <style>
       .bd-placeholder-img {
-        font-size: 1.125rem; 
+        font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -104,6 +104,9 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
+
+    
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -120,6 +123,40 @@
       </symbol>
     </svg>
 
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
     <style>
       header {
         background-color: rgb(6, 60, 6); 
@@ -132,7 +169,7 @@
  
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <img src="img\logoeco.png" alt="some text" width=40 height=40>
+      <img src="img/logo app.jpg" alt="some text" width=50 height=50>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -146,15 +183,16 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="info.html" data-bs-toggle="dropdown" >Informações</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mudclimáticas.html">Mudanças Climáticas</a></li>
+              <li><a class="dropdown-item" href="mudclimáticas.htm">Mudanças Climáticas</a></li>
               <li><a class="dropdown-item" href="susten.html">Sustentabilidade</a></li>
+              <li><a class="dropdown-item" href="amazonia.html">Amazônia</a></li>
               <li><a class="dropdown-item" href="animais.html"> Tráfico de animais</a></li>
-              <li><a class="dropdown-item" href="florestas.html"> Florestas</a></li>
             </ul>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="indigenas.html" data-bs-toggle="dropdown" >Indígenas</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="linguas.html"> Línguas Indígenas</a></li>
+                  <li><a class="dropdown-item" href="cultura.html">Cultura</a></li>
                   <li><a class="dropdown-item" href="espiritualidade.html">Espiritualidade</a></li>
                   <li><a class="dropdown-item" href="Importancia.html">Importância</a></li>
                   <li><a class="dropdown-item" href="arte.html">Arte</a></li>
@@ -249,7 +287,7 @@
 
       </div>
       <div class="col-md-5">
-        <img src="img.prontas/painel-solar tratado.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+        <img src="https://www.aldo.com.br/blog/wp-content/uploads/2020/11/blog_aldo_painel-solar-no-telhado-tudo-o-que-voce-precisa-saber-1024x587.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
       </div>
     </div>
 
@@ -257,13 +295,13 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Lâmpadas de LED <span class="text-body-secondary"> são energicamente eficientes e sustentáveis.</span></h2>
-        <p class="lead"> Mais eficientes e ao contrário das lâmpadas convencionais, as LEDs transformam mais de 80% da energia consumida em luz, em vez de calor. Tambem são conhecidas por sua eficiência energética, consumindo menos energia do que as lâmpadas incandescentes e fluorescentes.<br> Essa eficiência não apenas economiza energia, mas também reduz a pegada de carbono, contribuindo para práticas mais sustentáveis e amigáveis ao meio ambiente. Além disso, as lâmpadas de LED têm uma vida útil mais longa, o que as torna uma opção econômica e ambientalmente amigável a longo prazo.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Lâmpadas de LED <span class="text-body-secondary">Lâmpadas LED são energicamente eficientes e sustentáveis.</span></h2>
+        <p class="lead">As lâmpadas de LED são conhecidas por sua eficiência energética, consumindo menos energia do que as lâmpadas incandescentes e fluorescentes.<br> Essa eficiência não apenas economiza energia, mas também reduz a pegada de carbono, contribuindo para práticas mais sustentáveis e amigáveis ao meio ambiente. Além disso, as lâmpadas de LED têm uma vida útil mais longa, o que as torna uma opção econômica e ambientalmente amigável a longo prazo.</p>
       </div>
       
       <div class="col-md-5 order-md-1">
         
-        <img src="https://blogdaengenharia.com/wp-content/uploads/2022/03/istockphoto-824638788-612x612-1.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/> <br> <text x="50%" y="50%" fill="var(--bs-secondary-color)"  dy=".3em" ></text></svg>
+        <img src="https://lh6.googleusercontent.com/S904pcdexiEhA4VNiHEn8WdyRcjDkBNgYSGXUlrr437hihtYRt9C3biNRjSyQax-naR2rhz0f6PFshtdnsppB4fRT-OGKaFxvPKQ86N903YyB_tmw2Qs013Jt8xH4G5Gh7m5T71R"   class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/> <br> <text x="50%" y="50%" fill="var(--bs-secondary-color)"  dy=".3em" ></text></svg>
       </div>
     </div>
 
@@ -286,7 +324,7 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Uso consciente da água <span class="text-body-secondary"></span></h2>
+        <h2 class="featurette-heading fw-normal lh-1">Uso consciente da água <span class="text-body-secondary">.</span></h2>
         <p class="lead"> Reduzir o tempo de banho para cinco minutos e fechar a torneira ao ensaboar o corpo são maneiras eficazes de reduzir o consumo diário de água. Além disso, consertar vazamentos imediatamente pode prevenir o desperdício de grandes quantidades de água. A instalação de sistemas de captação de água da chuva para uso em atividades não potáveis, como regar plantas e limpar pisos, também é uma prática que ajuda a preservar os recursos hídricos.</p>
       </div>
       

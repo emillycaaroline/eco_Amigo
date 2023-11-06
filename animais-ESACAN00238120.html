@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Mudanças Climáticas</title>
+    <title> Tráfico de animais</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -120,7 +120,41 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
       </symbol>
     </svg>
-    
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
     <style>
       header {
         background-color: rgb(6, 60, 6); 
@@ -128,11 +162,11 @@
       .navbar {
         background-color: rgb(6, 60, 6) !important; 
       }
-      </style> 
+      </style>
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <img src="img\logoeco.png" alt="some text" width=40 height=40>
+          <img src="img/logo app.jpg" alt="some text" width=50 height=60>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -140,22 +174,22 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
     
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="info.html" data-bs-toggle="dropdown" >informações</a>
+                <a class="nav-link dropdown-toggle" href="info.html" data-bs-toggle="dropdown" >informações</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item active" href="mudclimáticas.html">Mudanças Climáticas</a></li>
+                  <li><a class="dropdown-item" href="mudclimáticas.htm">Mudanças Climáticas</a></li>
                   <li><a class="dropdown-item" href="susten.html">Sustentabilidade</a></li>
+                  <li><a class="dropdown-item" href="amazonia.html">Amazônia</a></li>
                   <li><a class="dropdown-item" href="animais.html"> Tráfico de animais</a></li>
-                  <li><a class="dropdown-item" href="florestas.html"> Florestas</a></li>
-
-                </ul> 
+                </ul>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  " href="indigenas.html" data-bs-toggle="dropdown" >indigenas</a>
+                    <a class="nav-link dropdown-toggle" href="indigenas.html" data-bs-toggle="dropdown" >indigenas</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item " href="linguas.html"> Línguas Indígenas</a></li>
+                      <li><a class="dropdown-item" href="linguas.html"> Línguas Indígenas</a></li>
+                      <li><a class="dropdown-item" href="cultura.html">Cultura</a></li>
                       <li><a class="dropdown-item" href="espiritualidade.html">Espiritualidade</a></li>
                       <li><a class="dropdown-item" href="Importancia.html">Importância</a></li>
                       <li><a class="dropdown-item" href="arte.html">Arte</a></li>
@@ -178,6 +212,43 @@
     </header>
 <main>
 
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+   
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#"></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
 
@@ -186,29 +257,17 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <!-- START THE FEATURETTES -->
-  
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1"> Como as Mudanças Climáticas Afetam Nossas Vidas: O Que Podemos Fazer?<span class="text-body-secondary"></span></h2>
-        <p class="lead"> As mudanças climáticas afetam muito nossas vidas, desde o que comemos até onde vivemos. Para lidar com isso, podemos usar mais energia do sol e do vento, economizar energia, preferir meios de transporte que não poluam tanto, proteger a natureza e trabalhar juntos com outras pessoas e países. É muito importante que todo mundo entenda o que está acontecendo e faça escolhas que ajudem o planeta. Se cuidarmos do meio ambiente, podemos garantir um futuro legal para todo mundo.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/02/geleiras.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
-      </div>
-    </div>
 
     <hr class="featurette-divider">
    
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Aquecimento Global: <span class="text-body-secondary"></span></h2>
-        <p class="lead"> Um dos principais sintomas das mudanças climáticas é o aumento da temperatura média global. Esse impacto é impulsionado principalmente pelo aumento das emissões de gases de efeito estufa, como dióxido de carbono (CO2) e metano (CH4), fontes de atividades humanas como queima de combustíveis fósseis e desmatamento.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Línguas Indígenas: <span class="text-body-secondary">  Informações sobre as línguas indígenas locais, sua importância cultural e esforços para preservar e promover essas línguas.</span></h2>
+        <p class="lead"></p>
        
       </div>
       <div class="col-md-5">
-        <img src="https://cdn-bbojj.nitrocdn.com/XhuUqKCkChZvoIyJMdtpqtOUKuVhsziu/assets/images/optimized/rev-8916f3e/www.higiclear.com/wp-content/uploads/2019/08/efeito-estufa-aquecimento-global-800x800.png" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+        <img src="https://i0.wp.com/jornal.usp.br/wp-content/uploads/2019/08/20190821_indios_indigenas_awapi.jpg?fit=800%2C420&ssl=1" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
       </div>
     </div>
 
@@ -216,11 +275,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Aumento de temperaturas:<span class="text-body-secondary"></span></h2>
-        <p class="lead">O aumento das temperaturas globais está levando a mudanças significativas em padrões climáticos e específicos de extremos meteorológicos, como ondas de calor mais frequentes e intensas, bem como o derretimento acelerado de geleiras e calotas polares.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Iniciativas de Preservação Linguística:<span class="text-body-secondary"> Detalhes sobre projetos ou programas que visam preservar, documentar e promover o uso de línguas indígenas, incluindo esforços de digitalização de materiais educacionais.</span></h2>
+        <p class="lead"> s com o meio ambiente, destacando práticas de conservação e a importância da preservação ambiental para a sobrevivência de suas culturas.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/02/geleiras.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+        <img src="https://www.uff.br/sites/default/files/styles/large/public/imagens-das-noticias/indio.jpg?itok=LocjWzDG" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
       </div>
     </div>
 
@@ -228,16 +287,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1"> Emissões de Gases de Efeito Estufa e Mudanças Climáticas <span class="text-body-secondary"></span></h2>
-        <p class="lead">
-          As emissões de gases de efeito estufa provenientes da queima de combustíveis fósseis desempenham um papel significativo nas mudanças climáticas. O dióxido de carbono (CO2) é
-          
-          Essa retenção de calor é fundamental para sustentar a vida na Terra, já que sem ela a temperatura média global seria de cerca de -18°C, em vez dos aproximadamente 15°C que experimentamos atualmente. No entanto, o aumento das concentrações desses gases de efeito estufa, devido à atividade hum
-          
-          Para mitigar os impactos das emissões de CO2 e outros gases de efeito</p>
+        <h2 class="featurette-heading fw-normal lh-1">Eventos e Atividades Culturais:<span class="text-body-secondary"> Informações sobre eventos culturais específicos que celebram e promovem o uso das línguas indígenas, como festivais de línguas ou competições de poesia.</span></h2>
+        <p class="lead"> O desaparecimento dos mais de 5,5 milhões de quilômetros quadrados que compreendem a região amazônica.   </p>
       </div>
       <div class="col-md-5">
-        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nationalgeographic_2724566.webp?w=1450&h=816" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+        <img src="https://projetocolabora.com.br/wp-content/uploads/2022/04/foto-3-scaled.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
       </div>
     </div>
 
@@ -245,8 +299,8 @@
 
     <div class="row featurette">
         <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Aumento do nível do mar <span class="text-body-secondary"> </span></h2>
-            <p class="lead"> O derretimento das calotas polares e das geleiras, impulsionado pelo aumento das temperaturas globais, está contribuindo para o aumento do nível do mar. Isso representa uma ameaça para comunidades costeiras em todo o mundo, que correm o risco de serem inundadas e de perderem terras habitáveis. Além disso, a intrusão de água salgada proveniente do aumento do nível do mar pode contaminar lençóis freáticos e tornar a água doce indisponível para o consumo humano e agrícola.</p>
+            <h2 class="featurette-heading fw-normal lh-1"> História e Importância das Línguas Indígenas<span class="text-body-secondary"> </span> Uma visão geral da importância cultural e histórica das línguas indígenas, juntamente com informações sobre os desafios enfrentados na preservação e revitalização dessas línguas.</h2>
+            <p class="lead">  Destaques </p>
         </div>
         <div class="col-md-5 order-md-1">
           <img src="https://opopular.com.br/image/policy:1.2208553:1676219338/image.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
@@ -257,8 +311,12 @@
   
       <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1"> Eventos climáticos extremos <span class="text-body-secondary"></span></h2>
-            <p class="lead"> O aumento da frequência e da intensidade de eventos climáticos extremos, como tempestades, furacões, inundações e secas prolongadas, está causando estragos em comunidades e infraestruturas em todo o mundo. O aumento do risco de eventos climáticos extremos representa desafios significativos para a segurança humana, resultando em perdas econômicas, deslocamento populacional e danos físicos e psicológicos generalizados. A necessidade de adaptação e resiliência diante desses eventos é mais urgente do que nunca.</p>
+            <h2 class="featurette-heading fw-normal lh-1">Recursos de Aprendizagem:<span class="text-body-secondary"> Links ou referências para recursos educacionais disponíveis para aprender línguas indígenas, como dicionários online, cursos ou aplicativos de aprendizagem interativa.</span></h2>
+            <p class="lead">
+                 O conhecimento tradicional transmitido de geração em geração, incluindo práticas de cura, técnicas agrícolas e outros conhecimentos ancestrais.
+                Importância do Meio Ambiente:
+                
+                Ênfase na relação das comunidades indígenas com o meio ambiente, destacando práticas de conservação e a importância da preservação ambiental para a sobrevivência de suas culturas.</p>
         </div>
         <div class="col-md-5">
           <img src="https://i0.wp.com/www.sabra.org.br/site/wp-content/uploads/2023/03/conheca-alguns-instrumentos-musicais-indigenas-de-tribos-brasileiras-20221024103355.jpg.jpg?fit=800%2C533&ssl=1" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
@@ -267,17 +325,6 @@
   
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Abastecimento de água <span class="text-body-secondary"> </span></h2>
-            <p class="lead"> As mudanças climáticas estão alterando a disponibilidade e a qualidade da água em muitas regiões. A redução da precipitação e a mudança nos padrões de chuva podem levar à escassez de água, afetando o abastecimento de água potável, a irrigação agrícola e as atividades industriais. Isso pode resultar em restrições no uso da água, aumento dos custos de produção e interrupções no fornecimento de água para uso doméstico.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img src="https://opopular.com.br/image/policy:1.2208553:1676219338/image.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
-        </div>
-      </div>
-  
-      <hr class="featurette-divider">
       
     <!-- /END THE FEATURETTES -->
 
