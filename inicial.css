@@ -31,6 +31,11 @@ body {
   .carousel-item {
     height: 32rem;
   }
+  .row.featurette img {
+    width: 500px; /* Define a largura das imagens como 100% do contêiner pai */
+    height: 400px; /* Define uma altura fixa para as imagens, substitua pelo valor desejado */
+   
+  }
   
   
   /* MARKETING CONTENT
