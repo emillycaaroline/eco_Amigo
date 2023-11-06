@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+  <head><script src="../assets/js/color-modes.js"></script>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Sobre</title>
+ 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index2.css">
+   
+   
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+ 
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+ 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+ 
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+ 
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+ 
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+ 
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+ 
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+ 
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+ 
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+ 
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+ 
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+ 
+   
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+ 
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <style>
+      header {
+        background-color: rgb(6, 60, 6);
+      }
+      .navbar {
+        background-color: rgb(6, 60, 6) !important;
+      }
+      </style>
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <img src="img/logo app.jpg" alt="some text" width=50 height=50>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+ 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="info.html" data-bs-toggle="dropdown" >informações</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mudclimáticas.htm">Mudanças Climáticas</a></li>
+              <li><a class="dropdown-item" href="susten.html">Sustentabilidade</a></li>
+              <li><a class="dropdown-item" href="amazonia.html">Amazônia</a></li>
+              <li><a class="dropdown-item" href="animais.html"> Tráfico de animais</a></li>
+            </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="indigenas.html" data-bs-toggle="dropdown" >indigenas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="linguas.html"> Línguas Indígenas</a></li>
+                  <li><a class="dropdown-item" href="cultura.html">Cultura</a></li>
+                  <li><a class="dropdown-item" href="espiritualidade.html">Espiritualidade</a></li>
+                  <li><a class="dropdown-item" href="Importancia.html">Importância</a></li>
+                  <li><a class="dropdown-item" href="arte.html">Arte</a></li>
+                  <li><a class="dropdown-item" href="comidas.html">Comidas</a></li>
+                </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="empreECO.html">Empresas ECO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="denuncia.html">Denuncia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+         
+<<<<<<< HEAD
+          <div id="insta">
+            <a href="https://instagram.com/proj.ecoamigo?igshid=MzRlODBiNWFlZA=="><img src="https://www.internetmatters.org/wp-content/uploads/2020/01/instagradientlogo-no-background.png" class="media-object  img-responsive img-thumbnail" width="70" height="70"></a>
+=======
+          <div id="insta"> 
+            <a href="https://instagram.com/proj.ecoamigo?igshid=MzRlODBiNWFlZA=="><img src="https://www.internetmatters.org/wp-content/uploads/2020/01/instagradientlogo-no-background.png" class="media-object  img-responsive img-thumbnail" width="70" height="70"></a> 
+>>>>>>> 7d8c5f5c1062a0bd3970a101009bedb11fead5d3
+          </div>
+        <div class="equipe">
+        <a href="https://whatsapp.com/channel/0029Va8sLqHAzNbqVylOGK00"><img src="img\logo app.jpg" class="media-object  img-responsive img-thumbnail" width="50" height="50"></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+ 
+ 
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+ 
+    <!-- START THE FEATURETTES -->
+ 
+ 
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">EcoAmigo
+          <span class="text-body-secondary">
+            O que fazemos? </span></h2>
+        <p class="lead">O EcoAmigo, é um projeto de um site que visa conscientizar sobre questões ambientais, com destaque para a Amazônia e o meio ambiente global. Ele oferece informações sobre a importância da Amazônia, práticas sustentáveis e monitoramento ambiental em tempo real. Também promove a cultura indígena e fornece notícias sobre questões ambientais globais. O EcoAmigo é uma ferramenta para inspirar ações em prol da preservação do meio ambiente e da Amazônia preza em proteger os recursos naturais e o clima do nosso planeta para as gerações futuras."</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/04/modelo-de-projeto-1024x682.png.webp" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+         width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+      </div>
+    </div>
+ 
+    <hr class="featurette-divider">
+ 
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Como surgiu</h2>
+        <p class="lead">A ideia do aplicativo "EcoAmigo" surgiu durante um projeto escolar da “Escola Social Marista Irmão Acácio”  uma instituição de ensino que faz parte da rede Marista, que é conhecida pelo seu compromisso com a educação baseada em valores. No nome "Irmão Acácio", o "Irmão" refere-se a um membro da Congregação Marista, que é religioso focado em questões ambientais e culturais. Inicialmente, identificamos a necessidade de conscientização sobre a Amazônia, o meio ambiente e a cultura indígena. Realizamos pesquisas aprofundadas, explorando dados e informações relevantes. Por meio de brainstorming em equipe, desenvolvemos a ideia do aplicativo como uma solução criativa para promover conscientização, educação e ações sustentáveis. O aplicativo "EcoAmigo" tem como objetivo informar, envolver e inspirar os usuários a contribuir para a preservação da Amazônia e da cultura indígena, além de promover práticas mais amigáveis ao meio ambiente..</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://maristaescolassociais.org.br/wp-content/uploads/2023/02/logos.jpg" alt="ODS" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" ></text></svg>
+       
+      </div>
+    </div>
+ 
+    <hr class="featurette-divider">
+ 
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Logo<span class="text-body-secondary"></span></h2>
+        <p class="lead"> A logo do site é uma representação única que combina a natureza (um coração em forma de árvore) com a cultura indígena  AJUAWUIAKI, (ramos de arvore) para transmitir o amor pela natureza e o respeito à herança cultural, resultando em uma mensagem forte e significativa.
+          </p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/logo app.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+      </div>
+    </div>
+ 
+    <hr class="featurette-divider">
+ 
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">ODS<span class="text-body-secondary"> O que é e por que é tão importante? </span></h2>
+        <p class="lead"> O ODS 15 busca proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade.Atraves de hábitos diários como a economia de água e energia, reciclagem e redução de lixo, descarte responsável e o ajuste da alimentação para consumo de produtos orgânicos e de agricultura familiar podem ajudar na pauta ligada à Vida Terrestre. Os seres humanos e outros animais dependem da natureza para terem alimento, ar puro, água limpa e também como um meio de combate à mudança do clima.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://sc.movimentoods.org.br/wp-content/uploads/2019/09/15.png" alt="ODS" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" ></text></svg>
+       
+      </div>
+    </div>
+ 
+    <hr class="featurette-divider">
+ 
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Equipe<span class="text-body-secondary"></span></h2>
+        <p class="lead"> A logo do site é uma representação única que combina a natureza (um coração em forma de árvore) com a cultura indígena  AJUAWUIAKI, (ramos de arvore) para transmitir o amor pela natureza e o respeito à herança cultural, resultando em uma mensagem forte e significativa.
+          </p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/convite para canal do whatsapp.png"   class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></svg>
+     
+      </div>
+    </div>
+ 
+ 
+    <hr class="featurette-divider">
+ 
+    <!-- /END THE FEATURETTES -->
+ 
+  </div><!-- /.container -->
+<!-- FOOTER -->
+<footer class="container">
+  <p class="float-end"><a href="#">Voltar para o topo</a></p>
+ 
+  <h3>Equipe</h3>
+  <div class="equipe">
+  <a href="https://github.com/emillycaaroline"><img src="https://avatars.githubusercontent.com/u/127847857?v=4" class="media-object  img-responsive img-thumbnail" width="95"></a>
+  <a href="https://github.com/vickieww"><img src="https://avatars.githubusercontent.com/u/127845411?v=4" class="media-object  img-responsive img-thumbnail" width="95"></a>
+  <a href="https://github.com/amandvitoria"><img src="https://avatars.githubusercontent.com/u/127847936?v=4" class="media-object  img-responsive img-thumbnail" width="95"></a>
+  <a href="https://github.com/anapaulacd"><img src="https://avatars.githubusercontent.com/u/127848114?v=4" class="media-object  img-responsive img-thumbnail" width="95"></a>
+  <a href="https://github.com/larissassk"><img src="https://avatars.githubusercontent.com/u/127845865?v=4" class="media-object  img-responsive img-thumbnail" width="95"></a>
+  <a href="https://github.com/laraassuncao18"><img src="https://avatars.githubusercontent.com/u/129851922?v=4" class="media-object  img-responsive img-thumbnail" width="95"></a><br>
+  <nav id="citação">
+    <figure>
+      <blockquote class="blockquote">
+        <p>"A natureza não pertence ao homem, o homem pertence à natureza."</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">Chefe nativo americano da tribo Suquamish <cite title="Source Title"> -Chief Seattle </cite>
+      </figcaption>
+    </figure>
+  </nav>
+ 
+</footer>
+ 
+ 
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  </html>
