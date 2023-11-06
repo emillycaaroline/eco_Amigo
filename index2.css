@@ -168,7 +168,6 @@ voltar ao topo
 /*
 Adiciona no meu um submenu que fique suspenso
 */
-
 .menu-list {
   list-style-type: none;
   padding: 0;
@@ -177,7 +176,7 @@ Adiciona no meu um submenu que fique suspenso
 .menu-list li {
   position: relative;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menu-list li a {
@@ -213,7 +212,52 @@ Adiciona no meu um submenu que fique suspenso
 .menu-list li:hover .submenu {
   display: block;
 }
-@media screen and (max-width: 768px) {
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-list li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.submenu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  color: #555;
+  font-weight: normal;
+  display: block;
+  padding: 10px;
+}
+
+.menu-list li:hover .submenu {
+  display: block;
+}
+
   .submenu {
     display: none;
   }
@@ -224,4 +268,4 @@ Adiciona no meu um submenu que fique suspenso
     display: block;
     padding: 10px;
   }
-}
+
