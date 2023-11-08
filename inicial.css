@@ -90,18 +90,3 @@ body {
       margin-top: 7rem;
     }
   }
- /* Estilos padrão para telas maiores */
-.elemento {
-  width: 50%;
-  margin: 0 auto;
-}
-
-/* Ajustes para telas menores */
-@media only screen and (max-width: 600px) {
-  .elemento {
-      width: 100%;
-  }
-}
-.carousel-item {
-  margin-right: 0px; /* Substitua 20px pela margem desejada */
-}
