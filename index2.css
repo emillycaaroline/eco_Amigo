@@ -177,8 +177,8 @@ body{
   box-sizing: border-box;
 }
 body img:not(header img) {
-  width: 500px; /* Define a largura desejada para as imagens, substitua pelo valor desejado */
-  height: 500px; /* Define a altura desejada para as imagens, substitua pelo valor desejado */
+  width: 400px; /* Define a largura desejada para as imagens, substitua pelo valor desejado */
+  height: 400px; /* Define a altura desejada para as imagens, substitua pelo valor desejado */
 }
 
 .row.featurette img {
