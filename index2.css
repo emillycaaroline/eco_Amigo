@@ -200,3 +200,23 @@ body img:not(header img) {
   @media only screen and (min-width: 992px) {
     /* Adicione aqui as alterações de estilo para telas grandes */
   }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .elemento {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .elemento {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+  

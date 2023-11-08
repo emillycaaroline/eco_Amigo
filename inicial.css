@@ -91,3 +91,60 @@ body {
     }
   }
   
+body{
+  text-align: initial;/* Para alinhar o texto no centro da página */
+  margin: 0; /* Para remover as margens padrão do corpo da página */
+  margin: 20px; /* Adiciona uma margem de 20 pixels a todos os lados da página */
+}
+
+
+/* O seletor '*' seleciona todos os elementos na página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body img:not(header img) {
+  width: 500px; /* Define a largura desejada para as imagens, substitua pelo valor desejado */
+  height: 500px; /* Define a altura desejada para as imagens, substitua pelo valor desejado */
+}
+
+.row.featurette img {
+  width: 500px; /* Define a largura das imagens como 100% do contêiner pai */
+  height: 400px; /* Define uma altura fixa para as imagens, substitua pelo valor desejado */
+ 
+}
+  /* Estilos para telas pequenas */
+  @media only screen and (max-width: 768px) {
+    /* Adicione aqui as alterações de estilo para telas pequenas */
+  }
+  
+  /* Estilos para telas médias */
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* Adicione aqui as alterações de estilo para telas médias */
+  }
+  
+  /* Estilos para telas grandes */
+  @media only screen and (min-width: 992px) {
+    /* Adicione aqui as alterações de estilo para telas grandes */
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .elemento {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .elemento {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+  
