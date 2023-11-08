@@ -186,37 +186,15 @@ body img:not(header img) {
   height: 400px; /* Define uma altura fixa para as imagens, substitua pelo valor desejado */
  
 }
-  /* Estilos para telas pequenas */
-  @media only screen and (max-width: 768px) {
-    /* Adicione aqui as alterações de estilo para telas pequenas */
-  }
-  
-  /* Estilos para telas médias */
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    /* Adicione aqui as alterações de estilo para telas médias */
-  }
-  
-  /* Estilos para telas grandes */
-  @media only screen and (min-width: 992px) {
-    /* Adicione aqui as alterações de estilo para telas grandes */
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
+/* Estilos padrão para telas maiores */
+.elemento {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Ajustes para telas menores */
+@media only screen and (max-width: 600px) {
   .elemento {
-    width: 50%;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .elemento {
       width: 100%;
-      margin: 0;
-      padding: 10px;
-    }
   }
-  
+}
