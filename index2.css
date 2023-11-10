@@ -214,3 +214,12 @@ body img:not(header img) {
   }
 }
 
+ /* Tamanho da imagem de equipe */
+    .equipe img {
+      width: 80px; 
+      height: 80px;
+    }
+    
+  
+     
+    
